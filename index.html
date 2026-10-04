@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Burger House</h2>
+
+        <div>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header>
+
+        <div>
+            <p>HAMBURGUESAS ARTESANALES</p>
+
+            <h1>El antojo que<br>sí vale la pena.</h1>
+
+            <p>
+                Hamburguesas preparadas al momento,
+                ingredientes frescos y mucho sabor.
+            </p>
+
+            <button onclick="irAlMenu()">Ver menú</button>
+        </div>
+
+        <div>
+            <img 
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+                alt="Hamburguesa">
+        </div>
+
+    </header>
+
+
+    <section id="menu">
+
+    <h2>Nuestro menú</h2>
+
+    <div id="productos"></div>
+
+</section>
+
+<section id="carrito">
+
+    <h2>Tu pedido</h2>
+
+    <div id="lista-carrito">
+        <p>Tu carrito está vacío.</p>
+    </div>
+
+    <h3>Total: $<span id="total">0</span></h3>
+
+    <button onclick="vaciarCarrito()">
+    Vaciar carrito
+        </button>
+
+    <button onclick="enviarPedido()">
+        Pedir por WhatsApp
+    </button>
+
+</section>
+
+<section id="contacto" class="informacion-negocio">
+
+    <h2>Visítanos</h2>
+
+    <p>
+        Hamburguesas recién hechas, todos los días.
+    </p>
+
+    <div class="datos-negocio">
+
+        <div>
+            <h3>📍 Ubicación</h3>
+            <p>Av. Principal #123</p>
+            <p>Cancún, Quintana Roo</p>
+        </div>
+
+        <div>
+            <h3>🕐 Horario</h3>
+            <p>Lunes a Domingo</p>
+            <p>1:00 PM - 11:00 PM</p>
+        </div>
+
+        <div>
+            <h3>📱 Contacto</h3>
+            <p>WhatsApp</p>
+            <p>Instagram: @burgerhouse</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <footer>
+        <p>© 2026 Burger House</p>
+    </footer>
+
+    <div id="carrito-flotante" onclick="irAlCarrito()">
+
+    <span>
+        🛒 <span id="cantidad-carrito">0</span> productos
+    </span>
+
+    <strong>
+        $<span id="total-flotante">0</span>
+    </strong>
+
+    <span>Ver pedido →</span>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
