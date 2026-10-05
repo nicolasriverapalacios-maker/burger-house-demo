@@ -310,3 +310,20 @@ footer {
     color: white;
     opacity: 1;
 }
+@media (max-width: 768px) {
+
+    .datos-negocio {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        margin: 30px auto 0;
+        gap: 15px;
+    }
+
+    .datos-negocio > div {
+        width: 100%;
+        padding: 25px 20px;
+        text-align: center;
+    }
+}
