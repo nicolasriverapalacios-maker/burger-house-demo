@@ -13,6 +13,11 @@ body {
     color: white;
 }
 
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -30,6 +35,11 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
 }
+
+
+/* =========================
+   PORTADA
+========================= */
 
 header {
     min-height: 80vh;
@@ -59,6 +69,11 @@ header img {
     border-radius: 20px;
 }
 
+
+/* =========================
+   BOTONES
+========================= */
+
 button {
     background-color: #e63946;
     color: white;
@@ -73,10 +88,20 @@ button:hover {
     opacity: 0.8;
 }
 
+
+/* =========================
+   SECCIONES
+========================= */
+
 section {
     padding: 80px 8%;
     text-align: center;
 }
+
+
+/* =========================
+   MENÚ
+========================= */
 
 #menu {
     background-color: #181818;
@@ -119,6 +144,7 @@ article:hover {
 .informacion-producto p {
     color: #aaa;
     min-height: 50px;
+    line-height: 1.5;
 }
 
 .precio-producto {
@@ -132,73 +158,11 @@ article:hover {
     font-size: 26px;
 }
 
-article p {
-    color: #ccc;
-    line-height: 1.5;
-}
 
-article strong {
-    font-size: 22px;
-}
+/* =========================
+   CARRITO
+========================= */
 
-#contacto {
-    padding: 100px 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #080808;
-}
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header > div {
-        width: 100%;
-    }
-
-    header h1 {
-        font-size: 40px;
-    }
-
-    #menu > div {
-        flex-direction: column;
-    }
-
-    article {
-        width: 100%;
-    }
-
-    nav a {
-        margin-left: 10px;
-    }
-
-    .datos-negocio {
-    flex-direction: column;
-}
-
-.datos-negocio > div {
-    width: 100%;
-}
-.producto-carrito {
-    grid-template-columns: 1fr 120px 65px;
-    padding: 15px 12px;
-}
-
-.producto-carrito button {
-    width: 32px;
-    height: 32px;
-}
-
-.producto-carrito > div {
-    gap: 6px;
-}
-}
 .producto-carrito {
     max-width: 750px;
     margin: 15px auto;
@@ -234,10 +198,86 @@ footer {
     margin: 0;
 }
 
-.producto-carrito button {
-    padding: 5px 10px;
-    margin: 0 8px;
+.acciones-carrito {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
+
+.boton-vaciar {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #aaa;
+}
+
+.boton-vaciar:hover {
+    background-color: #222;
+    color: white;
+    opacity: 1;
+}
+
+
+/* =========================
+   INFORMACIÓN DEL NEGOCIO
+========================= */
+
+#contacto {
+    padding: 100px 8%;
+}
+
+.informacion-negocio {
+    background-color: #181818;
+}
+
+.informacion-negocio > p {
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+.datos-negocio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.datos-negocio > div {
+    flex: 1;
+    padding: 30px;
+
+    background-color: #222;
+    border-radius: 15px;
+}
+
+.datos-negocio h3 {
+    margin-top: 0;
+}
+
+.datos-negocio p {
+    color: #aaa;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #080808;
+}
+
+
+/* =========================
+   CARRITO FLOTANTE
+========================= */
+
 #carrito-flotante {
     position: fixed;
 
@@ -264,60 +304,129 @@ footer {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 
     z-index: 1000;
-}
-.informacion-negocio {
-    background-color: #181818;
-}
 
-.informacion-negocio > p {
-    color: #aaa;
-    margin-bottom: 50px;
-}
-
-.datos-negocio {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.datos-negocio > div {
-    width: 33%;
-    padding: 30px;
-    background-color: #222;
-    border-radius: 15px;
-}
-
-.datos-negocio h3 {
-    margin-top: 0;
-}
-
-.datos-negocio p {
-    color: #aaa;
-}
-#carrito-flotante {
     text-decoration: none;
 }
-.boton-vaciar {
-    background-color: transparent;
-    border: 1px solid #555;
-    color: #aaa;
-}
 
-.boton-vaciar:hover {
-    background-color: #222;
-    color: white;
-    opacity: 1;
-}
+
+/* ==================================================
+   CELULARES
+================================================== */
+
 @media (max-width: 768px) {
 
+    /* Navegación */
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav h2 {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+
+    /* Portada */
+
+    header {
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+
+        padding: 50px 20px;
+        gap: 35px;
+    }
+
+    header > div {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    header img {
+        width: 100%;
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+
+    /* Secciones */
+
+    section {
+        padding: 60px 20px;
+    }
+
+
+    /* Menú */
+
+    #menu > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .imagen-producto {
+        height: 220px;
+    }
+
+    .informacion-producto {
+        padding: 20px;
+    }
+
+
+    /* Carrito */
+
+    .producto-carrito {
+        width: 100%;
+
+        grid-template-columns: 1fr 120px 65px;
+
+        padding: 15px 12px;
+    }
+
+    .producto-carrito > div {
+        gap: 6px;
+    }
+
+    .producto-carrito button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .acciones-carrito {
+        flex-direction: column-reverse;
+    }
+
+    .acciones-carrito button {
+        width: 100%;
+    }
+
+
+    /* Información del negocio */
+
+    #contacto {
+        padding: 60px 20px;
+    }
+
     .datos-negocio {
-        display: flex;
         flex-direction: column;
         width: 100%;
         max-width: 500px;
-        margin: 30px auto 0;
         gap: 15px;
     }
 
@@ -325,5 +434,17 @@ footer {
         width: 100%;
         padding: 25px 20px;
         text-align: center;
+    }
+
+
+    /* Carrito flotante */
+
+    #carrito-flotante {
+        width: calc(100% - 30px);
+        bottom: 15px;
+
+        padding: 15px;
+
+        font-size: 14px;
     }
 }
