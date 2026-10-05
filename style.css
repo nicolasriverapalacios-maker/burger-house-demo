@@ -185,18 +185,53 @@ footer {
 .datos-negocio > div {
     width: 100%;
 }
+.producto-carrito {
+    grid-template-columns: 1fr 120px 65px;
+    padding: 15px 12px;
+}
+
+.producto-carrito button {
+    width: 32px;
+    height: 32px;
+}
+
+.producto-carrito > div {
+    gap: 6px;
+}
 }
 .producto-carrito {
-    max-width: 600px;
+    max-width: 750px;
     margin: 15px auto;
-    padding: 15px;
+    padding: 18px;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 160px 100px;
     align-items: center;
 
     background-color: #222;
     border-radius: 10px;
+}
+
+.producto-carrito > span {
+    text-align: left;
+}
+
+.producto-carrito > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.producto-carrito strong {
+    text-align: right;
+}
+
+.producto-carrito button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
 }
 
 .producto-carrito button {
@@ -260,4 +295,18 @@ footer {
 
 .datos-negocio p {
     color: #aaa;
+}
+#carrito-flotante {
+    text-decoration: none;
+}
+.boton-vaciar {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #aaa;
+}
+
+.boton-vaciar:hover {
+    background-color: #222;
+    color: white;
+    opacity: 1;
 }

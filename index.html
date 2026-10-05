@@ -60,13 +60,17 @@
 
     <h3>Total: $<span id="total">0</span></h3>
 
-    <button onclick="vaciarCarrito()">
-    Vaciar carrito
+    <div class="acciones-carrito">
+
+        <button class="boton-vaciar" onclick="vaciarCarrito()">
+            Vaciar carrito
         </button>
 
-    <button onclick="enviarPedido()">
-        Pedir por WhatsApp
-    </button>
+        <button onclick="enviarPedido()">
+            Pedir por WhatsApp
+        </button>
+
+    </div>
 
 </section>
 
@@ -106,7 +110,7 @@
         <p>© 2026 Burger House</p>
     </footer>
 
-    <div id="carrito-flotante" onclick="irAlCarrito()">
+    <a href="#carrito" id="carrito-flotante">
 
     <span>
         🛒 <span id="cantidad-carrito">0</span> productos
@@ -118,7 +122,7 @@
 
     <span>Ver pedido →</span>
 
-</div>
+</a>
 
     <script src="script.js"></script>
 
